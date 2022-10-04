@@ -1,0 +1,168 @@
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  transition: .2s all;
+}
+
+.drawer {
+  box-sizing: border-box;
+  padding: 30px;
+  position: absolute;
+  width: 385px;
+  height: 100%;
+  right: 0;
+  top: 0px;
+  background-color: #ffffff;
+  box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+
+  h2 {
+    margin-bottom: 30px;
+  }
+}
+
+.drawerHeader {
+  display: flex;
+  justify-content: space-between;
+
+  img {
+    height: 32px;
+    transition: all 0.2s;
+    &:hover {
+      opacity: 0.5;
+      cursor: pointer;
+    }
+  }
+}
+
+.drawerBottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  li {
+    width: 325px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    div {
+      flex: 1;
+      border-bottom: 2px dashed #dfdfdf;
+    }
+  }
+
+  button {
+    margin-top: 10px;
+    position: relative;
+    background: #9dd558;
+    border-radius: 18px;
+    width: 100%;
+    height: 55px;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+
+    cursor: pointer;
+
+    img {
+      position: absolute;
+      right: 20px;
+    }
+  }
+}
+
+.drawerCards {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 68vh;
+}
+
+.drawerCard {
+  display: flex;
+  padding: 20px;
+  width: 325px;
+  margin-bottom: 20px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #f3f3f3;
+  border-radius: 20px;
+
+  transition: 0.2s all;
+
+  &:hover {
+    box-shadow: 0px 28px 40px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+  }
+
+  .drawerCardInfo {
+    margin: 0 12px 0 20px;
+
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      margin-bottom: 8px;
+    }
+
+    span {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+
+  img:nth-child(3):hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+}
+
+.empty {
+  margin-top:50%;
+  h3 {
+    margin: 20px 0 10px 0;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+  }
+  p {
+    width: 285px;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 0.4;
+  }
+
+  button {
+    margin-top: 10px;
+    position: relative;
+    background: #9dd558;
+    border-radius: 18px;
+    width: 100%;
+    height: 55px;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+
+    cursor: pointer;
+
+    img {
+      position: absolute;
+      left: 20px;
+      transform: rotate(180deg);
+    }
+  }
+}

@@ -1,0 +1,76 @@
+@import './components/all';
+
+body {
+  margin: 0;
+  background: #e5e5e5;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+.wrapper {
+  width: 1080px;
+  margin: 50px auto;
+  padding: 45px;
+  box-sizing: border-box;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 20px;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+.content {
+  h1 {
+    margin: 0 0 40px 0;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+  }
+}
+
+.contentTop {
+  display: flex;
+  justify-content: space-between;
+
+  .search {
+    position: relative;
+    width: 250px;
+    height: 45px;
+    padding: 15px;
+    display: flex;
+    gap: 13px;
+    align-items: center;
+
+    border: 1px solid #f3f3f3;
+    border-radius: 10px;
+    box-sizing: border-box;
+
+    input {
+      border: none;
+      font-size: 16px;
+      width: 70%;
+    }
+  }
+}
+
+.deleteSearchValue {
+  position: absolute;
+  right: 15px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+
